@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import MyButton from "./Button";
+import Parrafo from "./Parrafo";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MyButton
+        primary={true}
+        className={"code"}
+        children={"este es el texto i I"}
+      ></MyButton>
+      <Parrafo>Viaje espiritual</Parrafo>
+      <p>Párrafo dentro del div App</p>
+      <p className="code">
+        Este es un parrafo muy largo o eso es lo que pretendo, tambien necesito
+        la letra i porque es muy caracteristica de esta fuente.
+      </p>
+      <button>el button</button>
     </div>
   );
 }
