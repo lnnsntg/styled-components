@@ -3,23 +3,23 @@ import Header from "./components/Header";
 import { Container } from "./components/styles/Container.styled";
 import GlobalStyles from "./components/styles/Global";
 
+// ========================================================================
 
 const theme = {
   colors: {
     header: "#ebfbff",
     body: "#fff",
-    footer: "#003333"
-  }
-}
+    footer: "#003333",
+  },
+};
 function App() {
   return (
-    <ThemeProvider theme={theme}>     
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
-          <Header />
-        <Container>
-          <h1>Whereas for human rights have resulted</h1>
-        </Container>     
-      
+      <Header />
+      <Container>
+        <h1>Hello World</h1>
+      </Container>
     </ThemeProvider>
   );
 }
